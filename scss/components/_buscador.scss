@@ -1,25 +1,43 @@
 
-.buscador{
+@use "../utils/mixins" as mixins;
+
+
+.buscador {
     display: flex;
     justify-content: center;
     align-items: center;
-        & input{
+
+    & input {
         text-align: center;
         font-family: sans-serif;
         font-size: 20px;
         padding: 10px 20px;
         border: 2px solid #cccccc;
         border-radius: 25px;
-        width: 380px;
+        width: 380px; 
         max-width: 100%;
         box-sizing: border-box;
-            & input::placeholder{
-            color: #666666
-            }
-        }
+
+    &::placeholder {
+        color: #666666;
     }
 
     
+    @include mixins.responsive(tablet) {
+        width: 300px; 
+        font-size: 18px; 
+    }
+
+    @include mixins.responsive(mobile) {
+        width: 250px; 
+        font-size: 16px; 
+        padding: 8px 15px; 
+    }
+    }
+}
+
+
+
 
 
 

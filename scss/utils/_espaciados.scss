@@ -1,21 +1,56 @@
 
 
+@use "../utils/mixins" as mixins;
 
 
 
-.espaciado{
+.espaciado {
     margin-top: 200px;
-    .espaciado_2{
-        margin-top: 100px;
-        .espaciado_3{
-            margin-top: 200px;
-            .espaciadoo{
-                margin-top: 200px;
+
+    @include mixins.responsive(tablet) {
+        margin-top: 100px; 
+    }
+
+    @include mixins.responsive(mobile) {
+        margin-top: 50px;
+    }
+
+    .espaciado_2 {
+    margin-top: 100px;
+
+    @include mixins.responsive(tablet) {
+        margin-top: 50px; 
+    }
+
+    @include mixins.responsive(mobile) {
+        margin-top: 30px;
+    }
+
+    .espaciado_3 {
+        margin-top: 200px;
+
+        @include mixins.responsive(tablet) {
+            margin-top: 120px; 
+        }
+
+        @include mixins.responsive(mobile) {
+            margin-top: 70px; 
+        }
+
+        .espaciadoo {
+        margin-top: 200px;
+
+        @include mixins.responsive(tablet) {
+            margin-top: 150px; 
+            }
+
+        @include mixins.responsive(mobile) {
+            margin-top: 100px; 
+                }
             }
         }
     }
 }
-        
 
 
 

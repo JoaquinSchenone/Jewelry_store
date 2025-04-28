@@ -1,4 +1,7 @@
 
+@use "../utils/mixins" as mixins;
+
+
 
 footer{
     display: flex;
@@ -18,26 +21,59 @@ footer{
         width: 100%;
         background-color: gray ;
         }
+
+        @include mixins.responsive(mobile) {
+            flex-direction: column; 
+            padding: 20px;
+        
+            &::after {
+            font-size: 12px; 
+            bottom: -20px;
+            }
+        }
+        
+        @include mixins.responsive(tablet) {
+            padding: 50px; 
+        }
     }
+    
 
 
 
-.texto_footer{
-    font-family: sans-serif;
-    font-size: 25px;
-    color: ghostwhite;
+
+    .texto_footer,
     .texto2_footer{
     font-family: sans-serif;
     font-size: 25px;
     color: ghostwhite;
+        @include mixins.responsive(mobile) {
+        font-size: 18px; // Reduce el tamaño de las fuentes en móviles
+        text-align: center;
+        }
+    
+        @include mixins.responsive(tablet) {
+        font-size: 20px; // Ajuste intermedio para tabletas
+        }
+    }
+
+
         .textos_footer{
         display: flex;
         align-items: left;
         justify-content: center;
         gap: 10px;
+            @include mixins.responsive(mobile) {
+            flex-direction: column; 
+            align-items: center;    
+            gap: 5px;               
+            }
+        
+            @include mixins.responsive(tablet) {
+            gap: 8px; 
+            }
         }
-    }
-}
+    
+
 
 
 
@@ -52,6 +88,9 @@ footer{
     gap: 10px;
         & img{
         width: 55px;
+            @include mixins.responsive(mobile) {
+            width: 40px; 
+        }
     }
 }
 
@@ -61,4 +100,15 @@ footer{
     display: flex;
     align-items: center;
     color: ghostwhite;
-}
+
+    @include mixins.responsive(mobile){
+        flex-direction: column;
+        font-size: 12px;
+        text-align: center;
+        }
+        @include mixins.responsive(tablet) {
+        font-size: 14px;    
+        text-align: left;
+        }
+    }
+
