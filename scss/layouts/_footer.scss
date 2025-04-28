@@ -1,0 +1,64 @@
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px;
+    background-color: rgba(0, 0, 0, 0.983);
+    position: relative;
+        &::after{
+        display: block;
+        text-align: center;
+        content: "© Copyright JewelryStore-2025 Todos Los Derechos Reservados. Defensa de las y los consumidores para reclamos.";
+        position: absolute;
+        bottom: -10px;
+        height:45px;
+        left: 0;
+        width: 100%;
+        background-color: gray ;
+        }
+    }
+
+
+
+.texto_footer{
+    font-family: sans-serif;
+    font-size: 25px;
+    color: ghostwhite;
+    .texto2_footer{
+    font-family: sans-serif;
+    font-size: 25px;
+    color: ghostwhite;
+        .textos_footer{
+        display: flex;
+        align-items: left;
+        justify-content: center;
+        gap: 10px;
+        }
+    }
+}
+
+
+
+
+
+
+
+.imagenes_footer{
+    display: flex;
+    align-items: right;
+    justify-content: flex-end;
+    gap: 10px;
+        & img{
+        width: 55px;
+    }
+}
+
+
+
+.copyright{
+    display: flex;
+    align-items: center;
+    color: ghostwhite;
+}

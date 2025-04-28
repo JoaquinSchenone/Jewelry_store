@@ -1,0 +1,18 @@
+
+
+
+.lista_relojes{
+    display: flex;
+    padding: 400px;
+    }
+
+
+.Imagen_Principal{
+    object-position: center;
+    width: 2900px;
+    max-width: 100%;
+    max-height: 800px;
+    border: 2px solid black;
+    border-radius: 25px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
