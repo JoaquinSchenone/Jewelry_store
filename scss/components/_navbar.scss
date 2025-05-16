@@ -1,0 +1,82 @@
+
+.Classnavbar {
+    position: fixed;
+    top: 0;
+    left: 0;    
+    width: 100%;
+    background-color:black !important; 
+    height:50px;
+    z-index: 1000;
+    padding: 10px 15px;
+    align-items: center;
+    display: flex;
+
+
+    .navbar-brand {
+        color:black;
+        font-size: 1.5rem;  
+        font-weight: bold;
+    }
+
+    .ListaNavbar {
+        .NavbarItem {   
+            color: white;
+            margin: 0 15px;
+            .NavbarLink {
+                color:white;    
+                font-size: 1rem;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color:yellow;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.NavbarContainer {
+    position: fixed;
+}
+
+
+.Classnavbar-productos {
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    background-color: black !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.NavbarContainer-productos{
+    position: fixed;
+}
+
+.Classnavbar-productos .NavbarLink {
+    font-size: 16px; /* Ajusta el tamaño para que coincida con `index.html` */
+    font-weight: 500; /* Mantiene un peso uniforme */
+    color: white;
+    padding-top: 10px; /* Reduce espacio superior */
+}   
+
+
+.Classnavbar-productos .NavbarItem {
+    color: white;
+    margin: 0 15px;
+}
+
+.ListaNavbar-productos {
+    display: flex;
+    justify-content: flex-start !important; /* Empuja los enlaces hacia la izquierda */
+}
+
+.Classnavbar-productos .collapse.navbar-collapse {
+    justify-content: flex-start !important;
+}
+

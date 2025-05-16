@@ -13,8 +13,25 @@
 
 @use "utils/mixins";
 
+@use "components/navbar";
+
+@use "components/cards";
+
+@use "layouts/footer-productos";
+
+@use "layouts/informacion";
+
+@use "layouts/contacto";
+
+@use "layouts/nosotros";
+
+
+
+
 
 body{
+    background-color:#D3D3D3;
+    padding-top: 40px;  
     margin: 0;
     font-family:sans-serif;
 }
